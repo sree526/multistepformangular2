@@ -1,0 +1,109 @@
+<div class="row" [@routerAnimation]="'in'">
+<h2>Event Document</h2>                         
+                                <div class="col-md-12">
+                                	<div class="notification alert-info">
+                                    	<h1 style="text-align: center;color:#676a6c;font-weight:lighter;font-size:30px ">Client Roles Configuration</h1>
+                                    </div>
+                                </div><!-- end section -->                              
+                                
+                              
+                             
+                                    <div class="form-group">
+                                        
+                                        <div class=" col-md-2 ">
+                                            <label class="field prepend-icon">Role Name : </label>
+                                        </div><!-- end section -->                                    
+                                        <div class="form-group col-md-10">
+ 
+                                            <select class="form-control" id="sel1">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            </select>
+<!-- end section -->
+                                        </div>
+                                        </div>
+
+                                    <!-- end .frm-row section -->    
+
+
+                                    <div class="form-group">
+                                        <div class=" col-md-2">
+                                            <label class="field prepend-icon">Rule Field : </label>                          
+                                        </div><!-- end section -->                                    
+                                        <div class="form-group col-md-10 ">
+                                            
+                                                <select class="form-control" id="sel1">
+                                                <option>Select SLOB</option>
+                                                <option>LTD</option>
+                                                <option>STD</option>
+                                                <option>VP</option>
+                                                <option>PFL</option>
+                                              </select> 
+                                       
+                                        </div><!-- end section -->
+                                    </div><!-- end .frm-row section --> 
+
+                                    <div class="form-group">
+                                        <div class=" col-md-2">
+                                            <label class="field prepend-icon">Value Type : </label>                          
+                                        </div><!-- end section -->                                    
+                                        <div class="form-group col-md-10">
+                                           
+                                                <select class="form-control" id="sel1">
+                                                <option>Select SLOB</option>
+                                                <option>LTD</option>
+                                                <option>STD</option>
+                                                <option>VP</option>
+                                                <option>PFL</option>
+                                              </select> 
+                                          
+                                        </div><!-- end section -->
+                                    </div><!-- end .frm-row section --> 
+
+
+                                    <div class="form-group">
+                                        <div class=" col-md-2">
+                                            <label class="field prepend-icon">From value : </label>                          
+                                        </div><!-- end section -->                                    
+                                        <div class="form-group col-md-10">
+                                             <input type="text" class="form-control" id="usr">
+                                        </div><!-- end section -->
+                                    </div><!-- end .frm-row section --> 
+
+
+                                    <div class="form-group">
+                                        <div class="section col-md-2">
+                                            <label class="field prepend-icon">To Value : </label>                          
+                                        </div><!-- end section -->                                    
+                                        <div class=" form-group col-md-10 ">
+                                             <input type="text" class="form-control" id="usr">
+                                        </div><!-- end section -->
+                                    </div><!-- end .frm-row section --> 
+                                
+
+                                    <div class="frm-row">
+                                        <div class="section col-md-2">
+                                            <label class="field prepend-icon">Description : </label>                          
+                                        </div><!-- end section -->                                    
+                                        <div class="section col-md-10 ">
+                                             <textarea class="form-control" rows="5" id="comment"></textarea>
+                                        </div><!-- end section -->
+                                    </div><!-- end .frm-row section --> 
+
+
+                                </div>
+                                <!-- end section -->
+                             
+
+<div class="form-group row">
+   
+<div class="col-xs-6 col-xs-offset-3">
+    <a  routerLink="/maindashboard/dashboard/roles" (click)="activeclassService.setrolesclass(true)" class="btn btn-block btn-info">
+   <h4> Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span></h4>
+    </a>
+</div>
+</div>
+
+                        

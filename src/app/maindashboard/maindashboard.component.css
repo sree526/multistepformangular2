@@ -1,0 +1,19 @@
+#status-buttons                 { padding-top:30px; }
+#status-buttons a               { color:#FFF; display:block; text-align:center;  }
+#status-buttons a:hover         { text-decoration:none;    
+}
+a:hover span{
+color: #607D8B;
+  background-color: #DDD;
+}
+#status-buttons span            { background:#37B0D5; display:block; height:50px; margin:0 auto 10px; padding-top:5px; width:80%; 
+     } 
+#status-buttons a.active-link span   { background:#3D83C0;cursor:pointer }
+#form-container                { border-radius:5px;box-shadow: 0 0 0px black;height:100% }
+#form-container .page-header   { background:#fff; margin:0; padding:30px;border-top-left-radius:5px; 
+	border-top-right-radius:5px; }
+.navbar{
+    background-color:white;
+    border:0px;
+}
+ 

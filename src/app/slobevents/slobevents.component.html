@@ -1,0 +1,72 @@
+<div class="container-fluid" [@routerAnimation]="'in'">
+	<div class="notification alert-info">
+    	<h1 style="text-align: center;color:#676a6c;font-weight:lighter;font-size:30px ">Slob Events Configuration</h1>
+    </div>
+
+<div class="form-group col-md-6 col-md-offset-3 container1">
+   <h4> <label for="name">Slob</label></h4>
+  <select class="form-control" id="sel1">
+    <option>STD</option>
+    <option>LTD</option>
+    <option>VP</option>
+    <option>PFL</option>
+  </select>
+<p></p>
+  <button class="btn btn-primary" >Select</button>
+</div>
+    
+ <div class="form-group col-md-12 container1"  >
+                                
+    <div class="col-md-5">
+        <select size="5" multiple  style="width: 100%;overflow: hidden;"><option *ngFor="let ct of Clients">{{ct.name}}</option></select>     
+    </div>
+    <div class="col-md-2">
+        <input id="moveright" type="button" class="btn btn-primary btn-sm" value="Add"  />
+        <input id="moverightall" type="button" class="btn btn-primary  btn-sm" value="Add All"/>
+        <input id="move left" type="button" class="btn btn-primary  btn-sm" value="Remove" />    
+        <input id="moveleftall" type="button" class="btn btn-primary  btn-sm" value="Remove All" />
+    </div>
+    <div class="col-md-4">    
+        <select size="5" multiple  style="width: 100%;overflow: hidden;"></select>
+    </div> 
+</div>   
+
+    <div class="container1 col-md-12">
+    <table id="example" class="table table-striped table-bordered dt-responsive nowrap " style="background-color:white;width:100%" cellspacing="0" >
+        <thead>
+      <tr>
+        <th>id</th>
+        <th>customer_no</th>
+        <th>company</th>
+        <th>street</th>
+        <th>email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>1</td>
+          <td>10</td>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+        <td>
+         <span class="glyphicon glyphicon-envelope" style="color:green"></span>
+        <span class="glyphicon glyphicon-edit" style="color:deepskyblue"></span>
+        <span class="glyphicon glyphicon-trash" style="color:red"></span>
+        </td>
+      </tr>
+    </tbody>
+    </table>
+</div>
+
+
+<div class="form-group row">     
+<div class="form-group col-md-6 col-md-offset-3">
+      <h4> <label for="email">Events</label></h4>
+    <a routerLink="/maindashboard/dashboard/EventDocument" (click)="activeclassSerivce.seteventsdocuementclass(true)" class="btn btn-block btn-info">
+   <h4> Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span></h4>
+    </a>
+</div>
+</div>
+</div>

@@ -1,0 +1,33 @@
+#loginbutton{
+    background-color:green;
+    color:white;
+   
+}
+#logincontainer{
+    margin-top: 10%;
+    
+ 
+}
+
+#configbutton{
+    background-color: rgb(111, 188, 205);
+    color:white;
+    font-size:20px;
+}
+.glyphicon.glyphicon-menu-hamburger{
+     font-size: 30px;
+}
+
+.login{
+    background-color:grey;
+    height:100%;
+}
+
+
+#selectalldiv{
+    background-color:gray
+}
+.select{
+    background-color:blue;
+    
+}

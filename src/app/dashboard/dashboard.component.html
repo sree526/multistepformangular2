@@ -1,0 +1,20 @@
+ <div id="form-container" >
+  <div class="row">       
+  <button type="button" class="btn btn-info collapsed" data-toggle="collapse" data-target="#nav_buttons" id="cbutton" [ngClass]="{'show':isShown,'hidden':isHidden}" (click)=collapsebutton(1)>Click</button>
+<div class="buttonclass" id="nav_buttons" [ngClass]="{'width1': isStatusButtonsVisible1,'show':isShown1,'hidden':isHidden1,'width4':iszerowidth}" style="height:100%;float: left" >
+ <div id="status-buttons" class="text-center" >   
+  <a routerLink ="/maindashboard/dashboard/ClientNameEntry" routerLinkActive="active-link" ><span><h4>ClientNameEntry</h4></span></a>
+  <a routerLink="/maindashboard/dashboard/slobevents" routerLinkActive="active-link" [ngClass]="activeclass.getslobeventsclass()===undefined ? 'disabled' : 'enabled'"><span><h4>Slob Events</h4></span> </a>
+  <a routerLink="/maindashboard/dashboard/EventDocument" routerLinkActive="active-link" [ngClass]="activeclass.geteventdocumentsclass()===undefined?'disabled':'enabled'"><span><h4>Events Document</h4></span> </a>
+  <a routerLink="/maindashboard/dashboard/roles" routerLinkActive="active-link" [ngClass]="activeclass.getrolesclass()===undefined?'disabled':'enabled'"><span><h4>Roles</h4></span></a>
+  <a routerLink="/maindashboard/dashboard/documentroles" routerLinkActive="active-link" [ngClass]="activeclass.getdocumentrolesclass()===undefined?'disabled':'enabled'"><span><h4>Document Roles</h4></span></a>
+  <a routerLink="/maindashboard/dashboard/outputtext" routerLinkActive="active-link" [ngClass]="activeclass.getoutputtextclass()===undefined?'disabled':'enabled'"><span><h4>Output Text</h4></span></a>
+ </div>
+  </div>
+  <div class="formclass container-fluid" [ngClass]="{'width2': isCollapseButtonVisible2,'width3':isviewfullvisible}" style="float: right;" >
+  <router-outlet></router-outlet>
+  </div>
+  <div style="clear:both">
+  </div>
+ </div>
+ </div>

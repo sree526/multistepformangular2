@@ -1,0 +1,53 @@
+#status-buttons                 { padding-top:30px; }
+#status-buttons a               { color:#FFF; display:block; font-size:12px; margin-right:10px; text-align:center; text-transform:uppercase; }
+#status-buttons a:hover         { text-decoration:none;    
+}
+a:hover span{
+color: #607D8B;
+  background-color: #DDD;
+}
+#status-buttons span            { background:#37B0D5; display:block; height:50px; margin:0 auto 10px; padding-top:5px; width:80%; 
+     } 
+#status-buttons a.active-link span   { background:#3D83C0;cursor:pointer }
+#form-container                { border-radius:5px;box-shadow: 0 0 0px black;height:100% }
+#form-container .page-header   { background:#fff; margin:0; padding:30px;border-top-left-radius:5px; 
+	border-top-right-radius:5px; }
+.show {
+  visibility:visible;
+}
+.hidden {
+  display:none;
+}
+.width1{
+    width:30%;
+}
+.width2{
+    width:70%;
+}
+.width3{
+    width:100%;
+}
+.width4{
+    width:0%;
+}
+.show1{
+    visibility: visible;
+}
+.hidden1{
+    display: none;
+}
+.statusbuttonsheight{
+    height:100%;
+}
+@media only screen and (max-width: 700px) {
+    .buttonclass h4 {
+        font-size: 12	px;
+    }
+}
+.disabled {
+   pointer-events: none;
+   cursor: default;
+}
+.enabled{
+
+}
